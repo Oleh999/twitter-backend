@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  jsp-twitter-api:
+    container_name: twiiter-api
+    restart: unless-stopped
+    env_file: .env.dev
+    ports:
+      - 80:80
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      IS_PRODUCTION: 'true'

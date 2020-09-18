@@ -1,0 +1,27 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "object-literal-shorthand": false,
+    "no-console": false,
+    "max-classes-per-file": false,
+    "trailing-comma": false,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "semicolon": {
+      "options": "always",
+      "severity": "default"
+    },
+    "radix": false,
+    "ban-types": false,
+    "array-type": false,
+    "arrow-parens": true,
+    "member-access": true,
+    "typedef": true,
+    "one-variable-per-declaration": false
+  }
+}

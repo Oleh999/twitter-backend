@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        style(type="text/css").
+            .header {
+                font-size: 14px;
+            }
+
+            .footer {
+                font-size: 10px;
+            }
+    body
+        div.header
+            | Hello
+            br
+            | To confirm email press the link below
+            br
+            a(href=frontendUrl + `/email-confirm/` + token) link
+
+        div.footer
+            | Welcome to the Twitter app
+            br
+            a(href=frontendUrl) Our Website
